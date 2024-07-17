@@ -8,15 +8,13 @@ export default defineConfig({
   build: {
     rollupOptions: {
     
-      external: ["react", "react-dom", "react-router-dom", "antd", "dayjs"],
+      external: ["react", "react-dom", "react-router-dom"],
       output: {
         
         globals: {
-          react: "react",
+          "react": "react",
           "react-dom": "react-dom",
-          "react-router-dom": "react-router-dom",
-          antd: "antd",
-          dayjs: "dayjs",
+          "react-router-dom": "react-router-dom"
         },
       },
     },
